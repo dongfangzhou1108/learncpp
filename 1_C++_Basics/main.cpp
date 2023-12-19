@@ -7,6 +7,9 @@ public:
     std::cout << "copy_operator_test()" << std::endl;
   }
 
+	/*
+	 * 返回引用类型的原因是：保证与标量类型(int)相同，能够连续赋值，并支持链式调用
+	*/
   copy_operator_test &
   operator=(const copy_operator_test &rval) { // 重载赋值运算符
     i_ = new int(*(rval.i_));
