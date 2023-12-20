@@ -2,7 +2,7 @@
  * @Author: dongfangzhou1108 18746061711@163.com
  * @Date: 2023-12-19 11:24:23
  * @LastEditors: dongfangzhou1108 18746061711@163.com
- * @LastEditTime: 2023-12-19 16:04:38
+ * @LastEditTime: 2023-12-20 13:47:15
  * @FilePath:
  * /learncpp/1_C++_Basics/1_4_variable_assignment_and_initialization/main.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置
@@ -65,6 +65,8 @@ int main() {
    * TBD原因：
    * 1）基于()的直接初始化，可能与[函数声明]产生歧义
    * 2）https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es23-prefer-the--initializer-syntax
+   * 3）it disallows “narrowing conversions”，double 不能转换 int，保证数据安全
+   * 4）{} 能够执行 zero initialization，能够初始化为0
    */
   //  from core guidelines
   auto x1{7};    // x1 is an int with the value 7
@@ -76,4 +78,10 @@ int main() {
   // TODO: auto t1{1, 2}; can not compile, associate with [auto]
   // auto t1{1, 2};
   test_list_initialization t2{1, 2};
+
+	// 证明{}的 zero initialization 功能
+  int i_1;
+  int i_2{};
+  int i_3{10};
+  std::cout << i_1 << " " << i_2 << " " << i_3 << "\n";
 }
