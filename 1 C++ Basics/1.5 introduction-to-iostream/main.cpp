@@ -2,7 +2,7 @@
  * @Author: dongfangzhou1108 18746061711@163.com
  * @Date: 2023-12-19 16:20:07
  * @LastEditors: dongfangzhou1108 18746061711@163.com
- * @LastEditTime: 2023-12-19 17:19:20
+ * @LastEditTime: 2024-01-08 16:28:38
  * @FilePath: /learncpp/1_C++_Basics/1.5 introduction-to-iostream/main.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置
  * 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
@@ -20,6 +20,7 @@ int main() {
    * 测试用例(3)输入1个数字，1个字母：第一个数正常，第二个数为0
    * 测试用例(4)先输入整数，后输入小数：第2个数小数部分截断
    * 测试用例(5)先输入小数，后输入整数，第一个小数截断，第二个数为0
+   * 分析：一段数据错误，后面的数据理应舍弃
    */
 
   std::cout << "Enter two numbers separated by a space: ";
