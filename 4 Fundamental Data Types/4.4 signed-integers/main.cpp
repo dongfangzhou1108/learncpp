@@ -2,7 +2,7 @@
  * @Author: dongfangzhou 18746061711@163.com
  * @Date: 2024-01-10 07:20:08
  * @LastEditors: dongfangzhou1108 18746061711@163.com
- * @LastEditTime: 2024-01-10 13:22:56
+ * @LastEditTime: 2024-01-10 13:29:03
  * @FilePath: /learncpp/4 Fundamental Data Types/4.4 signed-integers/main.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置
  * 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
@@ -23,4 +23,9 @@
 // that developers should generally avoid unsigned integers.
 // unexpected behavior can result when you mix signed and unsigned integers
 // 尽量不要使用无符号整数, 尤其不要混合使用
+
+// when should you use unsigned numbers
+// First, unsigned numbers are preferred when dealing with bit manipulation
+// mainly those having to do with array indexing
+// 位操作和索引
 int main() {}
