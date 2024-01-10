@@ -2,7 +2,7 @@
  * @Author: dongfangzhou 18746061711@163.com
  * @Date: 2024-01-10 07:20:08
  * @LastEditors: dongfangzhou1108 18746061711@163.com
- * @LastEditTime: 2024-01-10 08:47:32
+ * @LastEditTime: 2024-01-10 13:22:56
  * @FilePath: /learncpp/4 Fundamental Data Types/4.4 signed-integers/main.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置
  * 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
@@ -18,4 +18,9 @@
 // Be careful when using integer division, as you will lose any fractional parts
 // of the quotient.
 // 使用整数除法时要小心，因为您将丢失商的任何小数部分。
+
+// Many developers (and some large development houses, such as Google) believe
+// that developers should generally avoid unsigned integers.
+// unexpected behavior can result when you mix signed and unsigned integers
+// 尽量不要使用无符号整数, 尤其不要混合使用
 int main() {}
